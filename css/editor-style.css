@@ -1,0 +1,26 @@
+@import url(//fonts.googleapis.com/css?family=Karla:400,400i,700|Libre+Franklin:400,800);
+body{
+	font-family: Karla, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Libre Franklin', Roboto, 'Helvetica Neue', Helvetica, sans-serif !important;
+}
+h1,
+h2,
+h3{
+	font-weight: 800 !important;
+}
+h4,
+h5,
+h6{
+	font-weight: 400 !important;
+}
+code{
+	background: rgba(222, 76, 66, 0.1) !important;
+	color: rgba(222, 76, 66, 1.0) !important;
+}

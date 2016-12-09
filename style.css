@@ -1,0 +1,180 @@
+/*
+Theme Name: Yukei 2016
+Theme URI: https://yukei.net
+Author: Felipe Lavín + the WordPress team
+Author URI: https://yukei.net/
+Description: A customized Twenty Sixteen theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: twentysixteen
+Template: twentysixteen
+*/
+
+body,
+button,
+input,
+select,
+textarea,
+.post-navigation{
+	font-family: Karla, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.entry-title,
+.entry-footer,
+.site-title,
+.main-navigation,
+.pagination,
+.widget .widget-title,
+.post-navigation .post-title,
+.entry-content .contact-form label,
+button,
+button[disabled]:hover,
+button[disabled]:focus,
+input[type="button"],
+input[type="button"][disabled]:hover,
+input[type="button"][disabled]:focus,
+input[type="reset"],
+input[type="reset"][disabled]:hover,
+input[type="reset"][disabled]:focus,
+input[type="submit"],
+input[type="submit"][disabled]:hover,
+input[type="submit"][disabled]:focus,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6{
+	font-family: 'Libre Franklin', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.site-title,
+.entry-title,
+.post-navigation .post-title,
+.hentry div.sharedaddy h3.sd-title, .hentry h3.sd-title,
+.widget .widget-title,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a,
+button{
+	font-weight: 800;
+}
+.entry-content h4,
+.entry-content h5,
+.entry-content h6{
+	font-weight: 400;
+}
+code{
+	background: rgba(222, 76, 66, 0.1);
+	color: rgba(222, 76, 66, 1.0);
+}
+.menu-toggle:after{
+	content: "\f419";
+	font-size: 16px;
+	vertical-align: top;
+	text-align: center;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	display: inline-block;
+	font-family: "Genericons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+	margin-left: 1rem;
+	border-radius: 0;
+}
+.entry-footer .byline,
+.entry-footer .entry-format,
+.entry-footer .comments-link,
+.entry-footer .tags-links,
+.format-link .post-thumbnail{
+	display: none !important;
+}
+.site-intro .entry-content{
+	font-size: 18px;
+	line-height: 2rem;
+	max-width: 45rem;
+	margin-bottom: 3rem;
+}
+@media screen and ( min-width: 44.375em ){
+	.site-intro .entry-content{
+		font-size: 24px;
+		margin-left: 7.6923%;
+		margin-bottom: 5.25rem;
+	}
+	div.site div.site-content .content-area article .entry-content{
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	body.no-sidebar div.site-content .content-area article .entry-content{
+		margin-left: 7.6923% !important;
+	}
+}
+@media screen and (min-width: 48.9375em) {
+	.site-intro .entry-content{
+		margin-left: 15%;
+	}
+	div.site div.site-content .content-area article .entry-content{
+		float: none;
+		margin-left: 7.6923% !important;
+	}
+	body.no-sidebar div.site div.site-content .content-area article .entry-content{
+		margin-left: 7.6923% !important;
+	}
+}
+@media screen and (min-width: 56.875em) {
+	body.no-sidebar div.site div.site-content .content-area article .entry-content{
+		margin-left: 15% !important;
+	}
+	div.site div.site-content .content-area article .entry-content{
+		margin-left: 0 !important;
+	}
+}
+div.site-content .content-area article .entry-content,
+#disqus_thread{
+	margin-left: 7.6923% !important;
+	margin-right: 7.6923% !important;
+}
+.site .site-content .content-area article .entry-footer{
+	margin-top: 1rem;
+	width: auto !important;
+}
+.format-aside .entry-title,
+.format-quote .entry-title{
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.format-quote .entry-title a{
+	font-weight: 400;
+	color: #AEAEAE;
+}
+.entry-footer > span:not(:last-child):after{
+	content: "\002f";
+	display: inline-block !important;
+	opacity: 0.7;
+	padding: 0 0.538461538em;
+}
+.site .site-content .content-area article .entry-footer > span{
+	display: inline-block;
+}
+.syntaxhighlighter{
+	padding: 1rem;
+}
+.clean-my-archives li{
+	list-style: none;
+}
+.clean-my-archives .day{
+	font-weight: bold;
+}
+.clean-my-archives .comments-number{
+	color: #ccc;
+}
