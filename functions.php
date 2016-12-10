@@ -49,7 +49,7 @@ class Yukei_2016_Theme{
 		foreach ( $posts->posts as $post ) {
 			$response[] = [
 				'title' => $post->post_title,
-				'date'  => date_i18n('F jS'),
+				'date'  => get_the_time( 'F jS', $post ),
 				'url'   => get_permalink( $post )
 			];
 		}
@@ -77,7 +77,7 @@ class Yukei_2016_Theme{
 		$q->set('posts_per_page', -1);
 		$q->set('post_status', 'publish');
 		$q->set('date_query', [
-			'year' => date_i18n('Y')
+			'year' => $q->get('page') ?: date_i18n('Y')
 		]);
 		$q->set('p', null);
 		$q->set('pagename', null);
