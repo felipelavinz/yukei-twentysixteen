@@ -24,6 +24,19 @@ get_header(); ?>
 		</li>
 	<?php endwhile; ?>
 	</ul>
+	<?php else : $fallback = new WP_Query([ 'post_type' => 'post', 'posts_per_page' => -1, 'date_query' => [ [ 'year' => date_i18n('Y') - 1 ] ], 'post_status' => 'publish', 'p' => null, 'pagename' => null ]); ?>
+		<?php if ( $fallback->have_posts() ) : ?>
+		<ul id="posts-archive" class="posts-archive">
+		<?php while ( $fallback->have_posts() ) : $fallback->the_post(); ?>
+			<li class="clear archive-post">
+				<a href="<?php the_permalink() ?>">
+					<span class="archive-post__title"><?php the_title() ?></span>
+					<time class="archive-post__date" datetime="<?php the_time('c') ?>"><?php the_time('F jS'); ?></time>
+				</a>
+			</li>
+		<?php endwhile; ?>
+		</ul>
+		<?php wp_reset_query(); endif; ?>
 	<?php endif; ?>
 	<script type="text/x-template" id="archive-post__template">
 		<li class="clear archive-post">
