@@ -155,3 +155,17 @@ function yukei_16_archive_years(){
 	");
 	return $years_with_posts;
 }
+
+add_action('wp_footer', function(){
+echo<<<EOL
+<script type="text/javascript">
+var _mfq = _mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.async = true;
+    mf.src = "//cdn.mouseflow.com/projects/2b8d85fa-7f42-498e-ac7e-9165577743cc.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+EOL;
+});
